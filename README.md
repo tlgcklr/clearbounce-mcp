@@ -9,6 +9,8 @@ Official hosted [MCP](https://modelcontextprotocol.io) server for [ClearBounce](
 | Tool | What it does | Cost |
 |---|---|---|
 | `verify_email` | Real-time deliverability check (syntax, domain, mailbox) with a `deliverable` / `risky` / `undeliverable` verdict | 1 credit |
+| `verify_bulk` | Verifies a list of 2-10,000 addresses as one background job with the full bulk pipeline (greylist retries, domain caching); returns a jobId immediately | 1 credit per unique address |
+| `check_bulk_status` | Progress and final summary of a bulk job | Free |
 | `find_email` | Finds likely business email addresses from a name + company domain | Free |
 | `check_credits` | Shows the remaining credit balance | Free |
 
